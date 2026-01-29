@@ -1,0 +1,4 @@
+body{margin:0;background:#0b0b15;color:#eee;font-family:sans-serif;text-align:center}
+header{padding:20px;background:#12121f;box-shadow:0 0 20px #7b2cff}
+button{padding:12px 25px;margin:10px;border:none;border-radius:10px;background:linear-gradient(135deg,#7b2cff,#f72585);color:white;font-size:16px;cursor:pointer}
+input{padding:8px;border-radius:6px;border:none}
