@@ -1,0 +1,49 @@
+body{
+margin:0;
+font-family:Segoe UI,sans-serif;
+background:#0a0a14;
+color:white;
+text-align:center;
+}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#12121f;
+box-shadow:0 0 20px #7b2cff88;
+}
+.logo{font-size:24px;color:#9d4edd;font-weight:bold}
+.auth input{
+padding:8px;border-radius:6px;border:none;margin-right:8px;
+}
+.auth button{
+padding:8px 14px;border:none;border-radius:6px;
+background:#9d4edd;color:white;
+}
+.balance{font-size:18px}
+main{padding:40px}
+.games{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:30px;
+max-width:800px;
+margin:40px auto;
+}
+.card{
+background:#181828;
+padding:40px 20px;
+border-radius:20px;
+font-size:24px;
+cursor:pointer;
+box-shadow:0 0 20px #7b2cff44;
+transition:0.2s;
+}
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #f72585aa;
+}
+footer{
+padding:15px;
+color:#666;
+}

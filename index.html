@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Neon Casino</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Neon Casino</div>
+  <div class="auth" id="auth">
+    <input id="user" placeholder="Логин">
+    <button onclick="login()">Войти</button>
+  </div>
+  <div class="balance" id="balanceBox" style="display:none">
+    Баланс: <span id="bal"></span>
+  </div>
+</header>
+
+<main>
+  <h2 id="welcome"></h2>
+  <div class="games" id="menu" style="display:none">
+    <div class="card" onclick="openGame('dice.html')">🎲 Dice</div>
+    <div class="card" onclick="openGame('mines.html')">💣 Mines</div>
+    <div class="card" onclick="openGame('crash.html')">🚀 Crash</div>
+    <div class="card" onclick="openGame('blackjack.html')">🂡 Blackjack</div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Neon Casino | Все данные защищены 🔒</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

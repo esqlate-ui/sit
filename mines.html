@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><body style="background:#0a0a14;color:white;text-align:center">
+<h2>Mines</h2><p id="b"></p>
+<div id="grid"></div>
+<button onclick="cashout()">Cashout</button>
+<a href="index.html">Назад</a>
+<script>
+let u=new URLSearchParams(location.search).get("u");
+let mines=[2,5,7]; let opened=[]; let mult=1;
+b.textContent='Баланс: '+localStorage[u];
+for(let i=0;i<9;i++){
+ let d=document.createElement('button');
+ d.textContent='?';
+ d.style.margin='5px';
+ d.onclick=()=>clickCell(i,d);
+ grid.appendChild(d);
+}
+function clickCell(i,d){
+ if(opened.includes(i))return;
+ if(mines.includes(i)){ d.textContent='💣'; alert('Boom'); }
+ else{ opened.push(i); mult+=0.5; d.textContent='💎'; }
+}
+function cashout(){
+ let win=100*mult;
+ localStorage[u]=+localStorage[u]+win;
+ alert('Выигрыш '+win);
+}
+</script></body></html>
